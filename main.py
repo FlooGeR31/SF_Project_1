@@ -1,15 +1,15 @@
 import cv2
 
 def face_capture():
-    
+
     cascade_path = r"C:\Users\Alex\Desktop\Education\SF\Project\SF_Project_1sem\filters\cascade.xml"
-    
+
     video_path = r"C:\Users\Alex\Desktop\Education\SF\Project\SF_Project_1sem\videos\video1.mov"
 
 
     # Создание объекта классификатора для обнаружения лиц
     clt = cv2.CascadeClassifier(cascade_path)
-    
+
     # Создание объекта видеокамеры с указанием пути к видеофайлу
     camera = cv2.VideoCapture(video_path)
 
@@ -63,8 +63,10 @@ def main():
 # Проверка, что программа запускается как самостоятельный скрипт
 if __name__ == "__main__":
     main()
+<<<<<<< HEAD
 
 
 
 def checkpeoplt():
     pass
+=======
