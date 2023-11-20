@@ -1,6 +1,5 @@
 import cv2
-import numpy as np
-import pandas as pd
+
 
 def face_capture():
 
@@ -61,10 +60,9 @@ def face_capture():
 # Основная функция, запускающая программу
 def main():
     face_capture()
-#орпыоврап343434
+
 # Проверка, что программа запускается как самостоятельный скрипт
 if __name__ == "__main__":
     main()
 
-def checkpeoplt():
-    pass
+
