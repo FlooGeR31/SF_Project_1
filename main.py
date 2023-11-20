@@ -1,4 +1,6 @@
 import cv2
+import numpy as np
+import pandas as pd
 
 def face_capture():
 
@@ -34,10 +36,10 @@ def face_capture():
         # Обнаружение лиц на кадре
         faces = clt.detectMultiScale(
             gray,
-            scaleFactor=1.01,
+            scaleFactor=1.02,
             minNeighbors=7,
-            minSize=(150, 150),
-            maxSize=(250,250)
+            minSize=(160, 160),
+            maxSize=(230,230)
         )
 
         # Отрисовка прямоугольников вокруг обнаруженных лиц
