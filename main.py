@@ -3,7 +3,7 @@ import cv2
 
 def face_capture():
 
-    cascade_path = r"C:\Users\Alex\Desktop\Education\SF\Project\SF_Project_1sem\filters\cascade.xml"
+    cascade_path = r"C:\Users\Alex\Desktop\Education\SF\Project 1\filters"
 
     video_path = r"C:\Users\Alex\Desktop\Education\SF\Project\SF_Project_1sem\videos\video1.mov"
 
