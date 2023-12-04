@@ -7,7 +7,7 @@ def face_capture():
 
     video_path = r"C:\Users\Alex\Desktop\Education\SF\Project\SF_Project_1sem\videos\video1.mov"
 
-
+    
     # Создание объекта классификатора для обнаружения лиц
     clt = cv2.CascadeClassifier(cascade_path)
 
@@ -61,7 +61,7 @@ def face_capture():
 def main():
     face_capture()
 
-# Проверка, что программа запускается как самостоятельный скрипт
+
 if __name__ == "__main__":
     main()
 
