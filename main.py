@@ -8,7 +8,7 @@ def face_capture():
     video_path = r"C:\Users\Alex\Desktop\Education\SF\Project\SF_Project_1sem\videos\video1.mov"
 
     
-    # Создание объекта классификатора для обнаружения лиц
+    # Создание объекта классификатора для обнаружения лица сотрудника.
     clt = cv2.CascadeClassifier(cascade_path)
 
     # Создание объекта видеокамеры с указанием пути к видеофайлу
