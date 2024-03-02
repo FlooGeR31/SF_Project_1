@@ -1,15 +1,10 @@
 import cv2
-import io
 import streamlit as st
-from PIL import Image
-import numpy as np
-from tensorflow.keras.applications import EfficientNetB0
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.efficientnet import preprocess_input, decode_predictions
 
 
 cascade_path = "filters/cascade.xml"
 video_path = "data/video1.mp4"
+
 
 def face_capture():
     st.set_page_config(page_title="Streamlit + OpenCV приложение")
@@ -54,8 +49,12 @@ def face_capture():
         )
 
         # Отрисовка прямоугольников вокруг обнаруженных лиц
-        for (x, y, width, height ) in faces:
-            cv2.rectangle(frame, (x, y), (x + width, y + height), (0, 0, 255), 2)
+        for (x, y, width, height) in faces:
+            cv2.rectangle(frame,
+                          (x, y),
+                          (x + width, y + height),
+                          (0, 0, 255),
+                          2)
 
         # Отображение обработанного кадра с лицами
         frame_placeholder.image(frame, channels='BGR')
@@ -70,9 +69,11 @@ def face_capture():
     camera.release()
     cv2.destroyAllWindows()
 
+
 # Основная функция, запускающая программу
 def main():
     face_capture()
+
 
 if __name__ == "__main__":
     main()
